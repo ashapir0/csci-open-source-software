@@ -18,3 +18,5 @@ Pants
 ![shirt](3-pants.png)
 Shoes
 ![shirt](3-shoes.png)
+
+#### 1 / 3 - Okay
