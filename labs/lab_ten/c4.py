@@ -9,7 +9,6 @@ if __name__ == "__main__":
     db = client["mongo_db_lab"]
     
     collection = db.definitions
-    collection.drop()
     
     print("All records:")
     pprint.pprint(collection.find())
@@ -18,10 +17,10 @@ if __name__ == "__main__":
     pprint.pprint(collection.find_one())
 
     print("Specific record:")
-    pprint.pprint(collection.find_one({"word": "bar"}))
+    pprint.pprint(collection.find_one({"word": "Ack"}))
 
     print("Record by object id:")
-    pprint.pprint(collection.find_one({"_id": ObjectId("")}))
+    pprint.pprint(collection.find_one({"_id": ObjectId("56fe9e22bad6b23cde07b8b8")}))
 
     print("Insert object:")
     collection.insert_one({"word": "Khalidius Maximus", "definition":"I was running Down the boulevard"})
